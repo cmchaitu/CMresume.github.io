@@ -17,7 +17,15 @@
 
 </head>
 <body id="page-top">
-
+    <!--<a href="https://www.sejda.com/html-to-pdf?save-link=https%3A%2F%2Fcmchaitu.github.io%2Fcmresume%2F&pageSize=A4">Save as PDF</a>
+    <script>
+        document.getElementById('saveAsPdfBtn').addEventListener('click', function (e) {
+            var pageUrl = encodeURIComponent(window.location.href);
+            var opts = ['save-link=' + pageUrl, 'pageOrientation=auto'];
+            window.open('https://www.sejda.com/html-to-pdf?' + opts.join('&'));
+            e.preventDefault();
+        });
+    </script>-->
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -108,26 +116,29 @@
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Personal Projects</h3>
+                        <h3 class="mb-3">Personal Projects</h3>
                         <div class="subheading mb-3"><a href="https://pokeblazor.azurewebsites.net/">PokeBlazor</a></div>
 
-                        <div class="subheading mb-3"> </div>
                         Developed a Blazor web assembly app hosted on a Blazor server using latest .NET 7 that gets random Pokemon details and images from the Poke API and Poke Glitch API on button click. <br>
                         Displayed details such as the type, description, species, and evolution line, as well as images including the default, shiny, and mega form (if available). <br>
                         Used the Mudblazor library for materializing and styling the Razor components, including the MudCarousel for images, MudGrid, MudPaper for layouts, MudExpansionPanels for details layout, and MudChip for buttons. <br>
                         Implemented the HttpClient.GetAsync method to send an HTTP GET request to a PokeAPI URI and used ReadFromJsonAsync to deserialize the JSON content into objects. <br>
                         Utilized ReadAsByteArrayAsync to get image data in an array of bytes format to load images faster. <br>
                         Passed data from a child razor component to a parent component using bind and called a parent method using an EventCallback after an event.
+
+                        <div class="subheading mt-3 mb-3"><a href="https://github.com/cmchaitu/DefCon">Defcon</a></div>
+
+                        Created a C# window batch application using .NET 6 to create build/release scripts automatically in AZURE Dev Portal. <br>
+                        Used Microsoft.TeamFoundation.Build.WebApi and Microsoft.VisualStudio.Services.ReleaseManagement.WebApi nuget packages which provides access to the build API and release management API for Azure DevOps Services and Azure DevOps Server respectively. <br>
+                        Using above packages, we can use the CreateDefinitionAsync and CreateReleaseDefinitionAsync methods to create/clone build and release pipeline.
+
                     </div>
+
                     <div class="flex-shrink-0"><span class="text-primary">March 2022 - Present</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <div class="subheading mb-3"><a href="https://github.com/cmchaitu/DefCon">Defcon</a></div>
-                        Created a C# window batch application using .NET 6 to create build/release scripts automatically in AZURE Dev Portal. <br>
-                        Used Microsoft.TeamFoundation.Build.WebApi and Microsoft.VisualStudio.Services.ReleaseManagement.WebApi nuget packages which provides access to the build API and release management API for Azure DevOps Services and Azure DevOps Server respectively. <br>
-                        Using above packages, we can use the CreateDefinitionAsync and CreateReleaseDefinitionAsync methods to create/clone build and release pipeline.
-                    </div>
+                          </div>
                 </div>
             </div>
         </section>
